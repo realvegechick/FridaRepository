@@ -36,13 +36,13 @@ Java.perform(function(){
 	});
 	var text=Java.use("com.tencent.mm.ui.search.FTSEditTextView")
 	text.getInEditTextQuery.implementation=function(){
-		stackTraceHere()
+		//stackTraceHere()
 		var ret=this.getInEditTextQuery()
 		//console.log(ret)
 		return String.$new(search)
 	}
 	text.getTotalQuery.implementation=function(){
-		stackTraceHere()
+		//stackTraceHere()
 		var ret=this.getTotalQuery()
 		//console.log(ret)
 		return String.$new(search)
